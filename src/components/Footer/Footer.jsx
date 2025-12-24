@@ -1,0 +1,98 @@
+import Footerbg from '../../assets/footerbg.jpg'
+import FooterImage from '../../assets/Footer.png'
+import Logo from '../../assets/header/logo.png'
+
+const Footer = () => {
+  return (
+    <div>
+      <footer className="bottom-0 w-full bg-cover bg-center" style={{ backgroundImage: `url(${Footerbg})` }}>
+        <div className="footer-top flex flex-col md:flex-row justify-between items-center gap-6 mb-10 pr-24">
+          <img src={FooterImage} alt="Footer Image" className="object-cover w-full md:w-1/2" />
+          <div className="p-5 flex flex-col justify-center text-center md:text-left">
+            <div className="logo flex items-center justify-center md:justify-start">
+              <img src={Logo} alt="logo" width={40} height={40} className='' />
+              <h3 className='text-base ml-2 text-white'>HandPros Hospitality</h3>
+            </div>
+            <h2 className="text-white font-black md:text-3xl text-2xl">
+              Bookmark in Your Own Way, With
+              HandyPros Our Travel Agency
+            </h2>
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <button className="px-4 py-4 mx-2 my-4 text-center bg-[#22bbbbd5] text-black rounded-md w-full md:w-1/4 font-bold hover:cursor-pointer mt-8">
+                EXPLORE TRIP
+              </button>
+              <p className="text-white font-bold text-sm">Call +234 809 8493357 or Chat Now.</p>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 px-6 md:px-24 mt-16">
+
+          {/* Packages */}
+          <div className="space-y-6">
+            <p className="font-bold text-white text-xl">Packages</p>
+            <ul className="space-y-6">
+              <li className="text-gray-400 font-semibold">Morocco</li>
+              <li className="text-gray-400 font-semibold">London Express</li>
+              <li className="text-gray-400 font-semibold">Chao Praya</li>
+              <li className="text-gray-400 font-semibold">Japan and Barley</li>
+            </ul>
+          </div>
+
+          {/* Stats */}
+          <div className="bg-gray-800 rounded-3xl p-8 space-y-6 text-center">
+            <div className="">
+              <h2 className="text-2xl text-white font-bold">3.2K+</h2>
+              <p className="text-sm text-gray-400 font-bold">Bookings</p>
+            </div>
+            <div className="">
+              <h2 className="text-2xl text-white font-bold">12K</h2>
+              <p className="text-sm text-gray-400 font-bold">Total Travels</p>
+            </div>
+            <div className="">
+              <h2 className="text-2xl text-white font-bold">96708</h2>
+              <p className="text-sm text-gray-400 font-bold">Total Travelers</p>
+            </div>
+          </div>
+
+          {/* Support */}
+          <div className="space-y-6">
+            <p className="font-bold text-white text-xl">Supports</p>
+            <ul className="space-y-6">
+              <li className="text-gray-400 font-semibold">Emails</li>
+              <li className="text-gray-400 font-semibold">Social Media</li>
+              <li className="text-gray-400 font-semibold">FAQs</li>
+              <li className="text-gray-400 font-semibold">Calls</li>
+            </ul>
+          </div>
+
+          {/* Terms */}
+          <div className="space-y-6">
+            <p className="font-bold text-white text-xl">Terms</p>
+            <ul className="space-y-6">
+              <li className="text-gray-400 font-semibold">Terms of Use</li>
+              <li className="text-gray-400 font-semibold">Copyright Notice</li>
+              <li className="text-gray-400 font-semibold">Refund Policy</li>
+              <li className="text-gray-400 font-semibold">Privacy Policy</li>
+            </ul>
+          </div>
+          {/* testimonial Input */}
+          <div className="space-y-8">
+            <p className="font-bold text-white text-xl">What would you say to everyone about us</p>
+            <p className="text-gray-400 font-semibold">add your own testimonial content here...</p>
+            <div className="flex justify-between bg-gray-500 rounded-lg overflow-hidden mt-3">
+              <input type="text" placeholder='click to upload your picture' className=' outline-none focus:outline-none bg-transparent text-white w-3/4 pl-2.5' />
+              <button className="px-4 py-4 text-center bg-[#22bbbbd5] text-black rounded-r-lg w-1/4 font-bold hover:cursor-pointer">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <p className="mt-20 mx-5 py-8 border-t-gray-600 border-t text-center text-white font-bold text-sm"> ©2025 HandyPros | All Rights Reserved</p>
+      </footer>
+    </div>
+  )
+}
+
+export default Footer
